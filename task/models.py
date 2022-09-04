@@ -17,6 +17,7 @@ class Framework(models.Model):
     author = models.CharField(max_length=100, null=True)
     author_address = models.CharField(max_length=100, null=True)
     description = models.CharField(max_length=100, null=True)
+    br2_field = models.CharField(max_length=100, null=True)
     language = models.ForeignKey(Language, null=False, on_delete=models.CASCADE)
 
     def __str__(self):
