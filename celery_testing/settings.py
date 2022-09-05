@@ -153,13 +153,13 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
 
-import logging
+# import logging
  
-# Create and configure logger
-logging.basicConfig(filename="celery_logs.log",
-                    format='%(asctime)s %(message)s',
-                    filemode='w')
+# # Create and configure logger
+# logging.basicConfig(filename="celery_logs.log",
+#                     format='%(asctime)s %(message)s',
+#                     filemode='w')
  
-# Creating an object
-logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+# # Creating an object
+# logger = logging.getLogger()
+# logger.setLevel(logging.DEBUG)
