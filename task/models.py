@@ -11,6 +11,7 @@ class Language(models.Model):
         return self.name
     
     
+# create model
 class Framework(models.Model):
     name = models.CharField(max_length=100, null=True)
     code = models.CharField(max_length=100, null=True)
