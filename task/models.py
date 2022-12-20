@@ -22,6 +22,7 @@ class Framework(models.Model):
     br1_field = models.CharField(max_length=100, null=True)
     language = models.ForeignKey(Language, null=False, on_delete=models.CASCADE)
     field1 = models.CharField(max_length=100, null=True)
+    field2 = models.CharField(max_length=100, null=True)
 
     def __str__(self):
         return self.name
